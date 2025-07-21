@@ -1,0 +1,163 @@
+/* Start of General Styling */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --btn_text_color: #fff;
+  --primary_color: #fcc05f;
+  --secondary_color: #352e28;
+  --primary_font: "PT Sans Caption";
+
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(../webfonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url(../webfonts/PT_Sans_Caption/PTSansCaption-Regular.ttf);
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(../webfonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Bree Serif";
+  src: url(../webfonts/Bree_Serif/BreeSerif-Regular.ttf);
+}
+
+body {
+  background-color: #f7ecde;
+  font-family: var(--primary_font);
+}
+
+::selection {
+  color: var(--secondary_color);
+  background-color: var(--primary_color);
+}
+
+/* Start of Bookmark Body Section*/
+
+h1 {
+  font-size: 50px;
+  color: var(--secondary_color);
+  position: relative;
+  display: inline-block;
+  font-family: "Pacifico", cursive;
+}
+
+h1::before {
+  content: "";
+  left: 0px;
+  bottom: 11px;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--primary_color);
+}
+
+.bookmark-body {
+  border: 2px dotted var(--secondary_color);
+  border-left: none;
+  border-right: none;
+}
+
+.bookmark-body h2 {
+  font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.bookmark-body .submit_btn button {
+  background-color: #d1512d;
+}
+
+.bookmark-body .submit_btn button:hover {
+  background-color: #bb4120;
+}
+
+/* Start of table Section */
+.table .btn_visit{
+    color: var(--btn_text_color);
+    background-color: #9eb23b;
+}
+
+.table .btn_visit:hover{
+    border-color: #6e8018;
+    background-color: #8a9e23;
+}
+
+.table .btn_delete{
+    background-color: #eb1d36;
+    color: var(--btn_text_color);
+}
+
+.table .btn_delete:hover{
+    border-color: #ba081d;
+    background-color: #d30820;
+}
+
+.warning_box{
+  background-color: #0007;
+}
+
+.warning_box .content_box{
+  width: 500px;
+}
+
+
+.warning_box .content_box .header .circles span{
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.warning_box .content_box .header .circles span:nth-child(1){
+  background-color: #f15f5d;
+}
+
+.warning_box .content_box .header .circles span:nth-child(2){
+  background-color: #febe2e;
+}
+
+.warning_box .content_box .header .circles span:nth-child(3){
+  background-color: #4db748;
+}
+
+.warning_box .content_box p{
+  font-size: 21px;
+  font-family: "Bree Serif";
+}
+
+.warning_box .content_box li{
+  font-size: 18px;
+}
+
+.warning_box .content_box li i{
+  color: #bb4120;
+}
